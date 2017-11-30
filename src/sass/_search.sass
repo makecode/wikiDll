@@ -1,0 +1,50 @@
+.search
+  position: relative
+  width: 300px
+
+  &__form
+    display: flex
+    flex-direction: row
+
+  &__input
+    display: block
+    padding-left: 14px
+    padding-right: 36px
+    width: 100%
+    height: 42px
+    line-height: 42px
+    background-color: #fff
+    border: 1px solid $bgGrey
+    color: #99a1a8
+    font-size: 16px
+    +h400
+
+  &__ico
+    position: absolute
+    right: 10px
+    top: 13px
+
+  &.is-general
+    width: 100%
+
+    .search
+
+      &__form
+        align-items: center
+
+      &__ico
+        width: 18px
+        top: 16px
+        left: 16px
+
+      &__input
+        padding-left: 47px
+        padding-right: 20px
+        width: 100%
+        height: 50px
+        line-height: 50px
+        font-size: 16px
+        color: #484a4d
+        border: none
+        letter-spacing: -.7px
+        +h400

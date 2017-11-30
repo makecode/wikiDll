@@ -1,0 +1,48 @@
+.breadcrumbs
+  padding: 6px 0
+  border-bottom: 1px solid $borderGrey
+  background-color: #f6f7fa
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    position: relative
+    padding-right: 26px
+
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      right: 13px
+      width: 1px
+      height: 6px
+      background-color: #7d7d7d
+
+    &:before
+      top: 5px
+      transform: rotate(-30deg)
+
+    &:after
+      bottom: 2px
+      transform: rotate(30deg)
+
+    &:last-child
+      padding-right: 0
+      a
+        color: #90959a
+        pointer-events: none
+
+      &:after,
+      &:before
+        display: none
+
+  &__link,
+  &__link:visited
+    color: $textBlack
+    font-size: 12px
+    +h400
+
+    &:hover
+      text-decoration: underline

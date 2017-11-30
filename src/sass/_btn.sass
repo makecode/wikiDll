@@ -1,0 +1,62 @@
+.btn
+  flex-direction: row
+  text-align: center
+  display: flex
+  flex-shrink: 0
+  width: 320px
+  height: 70px
+  line-height: 70px
+  color: #fff
+  background-color: $btnGreen
+  font-size: 24px
+  white-space: nowrap
+  transition: all .3s ease-in-out
+  cursor: pointer
+  overflow: hidden
+  +h400
+
+  &__icon
+    position: relative
+    padding: 0 35px
+    background-color: $btnGreenDark
+    box-shadow: 10px 0 100px 0 rgba(0,0,0,0.1)
+    .ico
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+  &__text
+    width: 100%
+    text-align: center
+    background-color: $btnGreen
+
+    &:hover
+      background-color: $btnGreenDark
+
+  &:hover,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+  &.is-search
+    display: block
+    text-align: center
+    width: 160px
+    height: 50px
+    line-height: 50px
+    font-size: 18px
+    +h600
+
+  &.is-large
+    width: 440px
+    font-size: 24px
+
+  &.is-small
+    font-size: 20px
+    height: 50px
+    line-height: 50px
+
+  &.is-block
+    display: block
+    width: 100%

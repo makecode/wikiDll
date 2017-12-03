@@ -14,15 +14,25 @@
     flex-direction: row
     justify-content: space-between
 
-  &__center
+  &__center,
+  &__right
     display: flex
     align-items: center
 
-  &__right
+.pre-footer
+  padding-top: 47px
+  padding-bottom: 33px
+  background-color: $bgGreyLight
+
+  &__wrap
     display: flex
+    flex-direction: row
+    justify-content: space-between
 
 .footer
   padding-bottom: 35px
+  background-color: #f0f1f2
+  border-top: 1px solid $borderGrey
 
   &__wrap
     display: flex
@@ -30,7 +40,6 @@
     justify-content: space-between
     align-items: center
     padding-top: 21px
-    border-top: 1px solid $borderGrey
 
   .list
     margin-bottom: 15px

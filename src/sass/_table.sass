@@ -1,85 +1,4 @@
-//.table
-//  table-layout: fixed
-//  width: 100%
-//  margin-top: 14px
-//  thead
-//    background-color: #f6f7fa
-//
-//  th
-//    position: relative
-//    height: 37px
-//    line-height: 37px
-//    font-size: 14px
-//    text-transform: uppercase
-//    text-align: left
-//    cursor: pointer
-//    padding-left: 25px
-//    +h600
-//
-//    &::after,
-//    &::before
-//      position: absolute
-//      content: ''
-//      left: 12px
-//      transform: translateY(-50%)
-//      width: 0
-//      height: 0
-//      border-style: solid
-//
-//    &::after
-//      top: calc(50% - 4px)
-//      border-width: 0 3px 4px 3px
-//      border-color: transparent transparent #4d5257 transparent
-//
-//    &::before
-//      top: calc(50% + 4px)
-//      border-width: 4px 3px 0 3px
-//      border-color: #4d5257 transparent transparent transparent
-//
-//    &:first-child
-//      width: 23%
-//
-//    &:nth-child(2)
-//      width: 59%
-//
-//    &:last-child
-//      width: 18%
-//
-//    &.sorting_desc
-//
-//      &::after
-//        display: none
-//
-//    &.sorting_asc
-//
-//      &::before
-//        display: none
-//
-//  tr
-//    &:nth-child(even)
-//      background-color: $bgGreyLight
-//
-//  td
-//    height: 30px
-//    line-height: 30px
-//    font-size: 14px
-//    padding-left: 25px
-//    overflow: hidden
-//    white-space: nowrap
-//    text-overflow: ellipsis
-//
-//    &:first-child
-//      width: 23%
-//
-//    &:nth-child(2)
-//      width: 59%
-//
-//    &:last-child
-//      width: 18%
-//
-//    .rating-value
-//      display: none
-//
+
 //.table-small
 //  table-layout: fixed
 //
@@ -108,6 +27,7 @@
 .table
   table-layout: fixed
   width: 100%
+  margin-top: 14px
 
   thead
     background-color: #f6f7fa
@@ -124,6 +44,7 @@
     height: 35px
     line-height: 35px
     text-align: left
+    padding-left: 25px
     font-size: 14px
     text-transform: uppercase
     +h600
@@ -147,6 +68,38 @@
       top: calc(50% + 4px)
       border-width: 4px 3px 0 3px
       border-color: #4d5257 transparent transparent transparent
+
+    &:first-child
+      width: 26%
+
+    &:nth-child(2)
+      width: 46%
+
+    &:nth-child(3)
+      width: 13%
+
+    &:last-child
+      width: 15%
+
+    &.sorting_desc
+
+      &::after
+        display: none
+
+    &.sorting_asc
+
+      &::before
+        display: none
+
+  td
+    padding-left: 25px
+
+    &:last-child
+      text-align: center
+      padding-right: 5px
+
+    .rating-value
+      display: none
 
   a
     color: #2992e0

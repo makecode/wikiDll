@@ -1,6 +1,6 @@
 //variables
 $textBlue: #2992e0
-$textBlueDark: #1b88da
+$linkBlue: #1b88da
 $textBlueLight: #aae0ff
 $textBlack: #4d5257
 $bgGrey: #dbdbdb
@@ -10,18 +10,29 @@ $bgGreen: #63d12d
 $btnGreen: #61bc34
 $btnGreenDark: #76c64e
 
++font("opensans-light", opensans-light)
++font("opensans-lightitalic", opensans-lightitalic)
++font("opensans-regular", opensans-regular)
++font("opensans-semibold", opensans-semibold)
+
 =h300
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif
-  font-weight: 300
+  font-family: 'opensans-light', Helvetica, Arial, sans-serif
+
+=h300ital
+  font-family: 'opensans-lightitalic', Helvetica, Arial, sans-serif
 
 =h400
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif
-  font-weight: 400
-
+  font-family: 'opensans-regular', Helvetica, Arial, sans-serif
 
 =h600
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif
-  font-weight: 600
+  font-family: 'opensans-semibold', Helvetica, Arial, sans-serif
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 13px
+  color: $textBlack
+  +h400
 
 h1
   font-size: 48px
@@ -56,15 +67,7 @@ h3
 
   &.is-fz-20
     font-size: 20px
-    color: $textBlueDark
-
-body
-  display: flex
-  flex-direction: column
-  font-family: Arial, sans-serif
-  font-size: 13px
-  color: $textBlack
-  +h400
+    color: $linkBlue
 
 a
   color: $textBlack
@@ -157,3 +160,33 @@ img
     padding-bottom: 7px
     font-size: 20px
     border-bottom: 1px solid $borderGrey
+
+.review
+  padding: 40px 22px 45px
+  width: 330px
+  background-color: #fff
+  border: 1px solid $borderGrey
+  font-size: 18px
+  color: #343434
+
+  &__text
+    padding-bottom: 20px
+    +h300ital
+
+.btn-blue
+  width: 140px
+  height: 40px
+  line-height: 40px
+  text-align: center
+  color: #FFF
+  background-color: #3495df
+  font-size: 15px
+  border-radius: 0
+  transition: all .3s ease-in-out
+  cursor: pointer
+  +h600
+
+  &:hover
+    background-color: #44a7f1
+
+

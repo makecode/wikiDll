@@ -18,8 +18,9 @@
   &__icon
     position: relative
     padding: 0 35px
-    background-color: $btnGreenDark
+    background-color: #76c64e
     box-shadow: 10px 0 100px 0 rgba(0,0,0,0.1)
+
     .ico
       position: absolute
       top: 50%
@@ -29,7 +30,8 @@
   &__text
     width: 100%
     text-align: center
-    background-color: $btnGreen
+    color: #fff
+    background-color: #61bc34
 
     &:hover
       background-color: $btnGreenDark
@@ -46,7 +48,11 @@
     height: 50px
     line-height: 50px
     font-size: 18px
+    border-radius: 0
     +h600
+
+    &:hover
+      background-color: #7fd945
 
   &.is-large
     width: 440px
@@ -60,3 +66,19 @@
   &.is-block
     display: block
     width: 100%
+
+.btn-blue
+  width: 140px
+  height: 40px
+  line-height: 40px
+  text-align: center
+  color: #FFF
+  background-color: #3495df
+  font-size: 15px
+  border-radius: 0
+  transition: all .3s ease-in-out
+  cursor: pointer
+  +h600
+
+  &:hover
+    background-color: #44a7f1

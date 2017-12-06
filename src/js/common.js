@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
   var $languageEl = $('.language__el'),
-      $language = $('.language');
+      $language = $('.language'),
+      $tableDllHash = $('.table-dll__hash');
 
   $language.hover(function(){
     $(this).toggleClass('is-open');
@@ -12,11 +13,18 @@ $(document).ready(function() {
     $(this).toggleClass('is-active');
   });
 
+  $tableDllHash.map(function () {
+    $(this).on('click', function () {
+      $(this).find('.hash').toggleClass('is-visible');
+      console.log($(this).find('hash'));
+    })
+  });
 
   $('table.table').DataTable({
     paging: false,
     searching: false,
-    info: false
+    info: false,
+    autoWidth: false
   });
 
   $('#how').on("click","a", function (event) {

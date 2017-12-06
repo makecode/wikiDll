@@ -34,9 +34,16 @@
         width: 14px
         height: 13px
 
-  &.is-table
+  &.is-col
 
     .quick-files
+
+      &__title
+        margin-top: 35px
+        margin-bottom: 17px
+        padding-bottom: 0
+        font-size: 20px
+        border-bottom: 0
 
       &__list
         display: flex
@@ -44,10 +51,20 @@
         flex-wrap: wrap
 
       &__el
-        width: 30%
+        display: inline
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+        height: 15px
+        line-height: 15px
+        margin-bottom: 7px
+        width: 31%
         background-color: #fff
+        margin-right: 15px
 
       &__link
+        display: inline
+        padding: 0
 
         &:hover
           color: $textBlack

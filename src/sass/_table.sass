@@ -1,33 +1,8 @@
-
-//.table-small
-//  table-layout: fixed
-//
-//  tr
-//    height: 22px
-//    line-height: 22px
-//    &:nth-child(even)
-//      background-color: $bgGreyLight
-//
-//  td
-//    overflow: hidden
-//    white-space: nowrap
-//    text-overflow: ellipsis
-//
-//    &:first-child
-//      text-align: right
-//      width: 26%
-//
-//    &:last-child
-//      padding-left: 10px
-//
-//  a
-//    &:hover
-//      text-decoration: underline
-
 .table
   table-layout: fixed
   width: 100%
   margin-top: 14px
+  margin-bottom: 68px
 
   thead
     background-color: #f6f7fa
@@ -48,6 +23,11 @@
     font-size: 14px
     text-transform: uppercase
     +h600
+
+    &.sorting,
+    &.sorting_asc,
+    &.sorting_desc
+      cursor: pointer
 
     &::after,
     &::before
@@ -70,16 +50,16 @@
       border-color: #4d5257 transparent transparent transparent
 
     &:first-child
-      width: 26%
+      width: 29%
 
     &:nth-child(2)
-      width: 46%
+      width: 43%
 
     &:nth-child(3)
-      width: 13%
+      width: 14%
 
     &:last-child
-      width: 15%
+      width: 14%
 
     &.sorting_desc
 
@@ -93,13 +73,74 @@
 
   td
     padding-left: 25px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
     &:last-child
       text-align: center
-      padding-right: 5px
+      padding-right: 30px
 
     .rating-value
       display: none
 
   a
     color: #2992e0
+
+  &.is-three-column
+    th
+      &:first-child
+        width: 22%
+
+      &:nth-child(2)
+        width: 58%
+
+      &:last-child
+        width: 20%
+
+      td
+
+        &:last-child
+          padding-right: 30px
+
+
+.table-small
+  width: 100%
+
+  thead
+    margin-bottom: 10px
+
+  tr
+    height: 26px
+    line-height: 26px
+
+    &:nth-child(even)
+      background-color: #fafbfc
+
+  th
+    font-size: 14px
+    color: #99a1a8
+
+    &:first-child
+      letter-spacing: 1px
+      text-align: left
+      font-size: 22px
+      color: #4d5257
+
+  td
+    text-align: center
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+    &:first-child
+      width: 60%
+      text-align: left
+
+    &:nth-child(2),
+    &:nth-child(3)
+      font-size: 12px
+      color: #99a1a8
+
+    a
+      color: $textBlack

@@ -1,0 +1,33 @@
+.hash
+  display: none
+  position: absolute
+  top: 0
+  right: 82px
+  width: 300px
+  height: 30px
+  line-height: 28px
+  border: 1px solid #6f757d
+  box-sizing: border-box
+  background-color: #fff
+  text-align: center
+  +clr
+
+  &.is-visible
+    display: block
+
+  &__key
+    width: 48px
+    float: left
+    display: inline-block
+    color: #6f757d
+    background-color: #fff
+    box-sizing: border-box
+    +h600
+
+  &__value
+    display: inline-block
+    float: left
+    width: calc(100% - 48px)
+    background-color: #6f757d
+    color: #fff
+    box-sizing: border-box

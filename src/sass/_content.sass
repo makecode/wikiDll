@@ -2,7 +2,7 @@
   padding: 30px 0
 
   &__title
-    padding-bottom: 5px
+    padding-bottom: 8px
     border-bottom: 1px solid $borderGrey
 
   &__top
@@ -10,12 +10,15 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
-    padding-bottom: 17px
-    margin-bottom: 17px
+    padding-bottom: 22px
+    margin-bottom: 20px
     border-bottom: 1px solid $borderGrey
 
+    h1
+      letter-spacing: -.6px
+
   &__left
-    width: 71%
+    width: 70%
 
   &__right
     width: 29%
@@ -26,29 +29,69 @@
     width: 100%
 
   &__left
-    margin-right: 31px
+    margin-right: 30px
+
+  &.is-inner-1,
+  &.is-inner-2,
+  &.is-inner-3,
+  &.is-inner-6,
+  &.is-inner-7
+    padding-top: 20px
+    padding-bottom: 50px
+
+  &.is-inner-4
+    padding-top: 25px
+    padding-bottom: 94px
 
   &.is-inner-5
     padding: 50px 0
 
-  &.main
-    padding-top: 40px
-    padding-bottom: 73px
+  &.is-inner-6
+    .text
+      margin-top: 10px
+      margin-bottom: 5px
 
-    .content__title
-      padding-bottom: 15px
+      &__descr
+        padding-bottom: 19px
 
-  &.is-extension
-    padding-top: 20px
+  &.is-inner-7
+    padding-bottom: 55px
+
+    .text
+      margin-top: 11px
+
+      &__descr
+        padding-bottom: 28px
+
+  &.is-inner-8
+    padding-top: 24px
+    padding-bottom: 70px
+
+    .content__left
+      margin-right: 33px
+
+      .banner
+        margin-top: 23px
+        margin-bottom: 20px
+
+    .content__right
+      .banner
+        margin-bottom: 30px
+
+    .text
+
+      &__title
+        display: block
+        margin-bottom: 10px
+        font-size: 22px
+        +h300
+
+      &__descr
+        margin-bottom: 30px
+
+  &.is-inner-9
     padding-bottom: 100px
 
-    .content__title
-      padding-bottom: 9px
-
-    .content__text
-      margin-top: 10px
-      margin-bottom: 18px
-
-  &.terms
-    padding-top: 20px
-    padding-bottom: 94px
+    .banner
+      margin-top: 25px
+      margin-bottom: 30px

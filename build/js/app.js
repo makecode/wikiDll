@@ -205,9 +205,17 @@ $(document).ready(function() {
   });
 
   $tableDllHash.map(function () {
+    var toggledClass = 'is-visible';
+
     $(this).on('click', function () {
-      $(this).find('.hash').toggleClass('is-visible');
-      console.log($(this).find('hash'));
+      var $el = $(this).find('.hash');
+      $('.table-dll__hash').not(this).find('.hash').removeClass(toggledClass);
+
+      if (($el).hasClass(toggledClass)) {
+        $($el).removeClass(toggledClass)
+      } else {
+        $($el).addClass(toggledClass)
+      }
     })
   });
 
@@ -229,15 +237,5 @@ $(document).ready(function() {
 
     $('body,html').animate({scrollTop: top - margin}, 1000);
   });
-
-	var extension = $('.file-ext');
-
-	extension.map(function(el) {
-		if (el.length > 8) {
-			el.addClass('is-shorted');
-		}
-	})
-
-
 });
 

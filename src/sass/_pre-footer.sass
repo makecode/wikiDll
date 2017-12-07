@@ -1,0 +1,102 @@
+.pre-footer
+  margin-top: 50px
+  padding-top: 40px
+  padding-bottom: 50px
+  background-color: $bgGreyLight
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__item
+    display: block
+    width: 330px
+    height: 190px
+    border: 1px solid $borderGrey
+    background-color: #fff
+    box-sizing: border-box
+
+.article
+  display: block
+  padding: 10px 20px
+
+  &__title
+    display: block
+    padding-bottom: 9px
+    border-bottom: 1px solid $borderGrey
+    font-size: 20px
+    color: #343434
+
+  &__list
+    margin-top: 10px
+    display: flex
+    flex-direction: column
+
+  &__el
+    margin-bottom: 2px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__link
+    color: $linkBlue
+
+.review
+  position: relative
+  width: 100%
+  height: 100%
+  font-size: 18px
+  text-align: center
+  color: #343434
+
+  &__wrap
+    position: absolute
+    padding: 0 20px
+    width: 100%
+    height: auto
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+  &__text
+    padding-bottom: 12px
+    +h400ital
+
+  &:after,
+  &:before
+    position: absolute
+    left: 45px
+    content: ''
+    display: block
+    width: 0
+    height: 0
+    margin-left: -10px
+    border-width: 20px 20px 0 20px
+    border-style: solid
+    border-color: transparent
+
+  &:before
+    bottom: -21px
+    border-top-color: #ecedee
+
+  &:after
+    bottom: -19px
+    border-top-color: #fff
+
+.feedback
+  position: relative
+  width: 100%
+  height: 100%
+  text-align: center
+  font-size: 18px
+  color: #343434
+
+  &__text
+    position: absolute
+    width: 100%
+    height: auto
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    +h400ital

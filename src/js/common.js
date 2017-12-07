@@ -4,7 +4,7 @@ $(document).ready(function() {
       $language = $('.language'),
       $tableDllHash = $('.table-dll__hash');
 
-  $language.hover(function(){
+  $language.click(function(){
     $(this).toggleClass('is-open');
   });
 

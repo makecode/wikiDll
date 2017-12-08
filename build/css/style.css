@@ -140,9 +140,9 @@ i-mb-25 { margin-bottom: 25px; }
 .btn:hover, .btn:focus, .btn:visited { text-decoration: none; }
 .btn.is-search { display: block; text-align: center; width: 160px; height: 50px; line-height: 50px; font-size: 18px; border-radius: 0; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 .btn.is-search:hover { background-color: #7fd945; }
-.btn.is-large { width: 440px; font-size: 24px; }
+.btn.is-large { width: 440px; font-size: 26px; letter-spacing: -0.4px; }
 
-.btn-green { display: block; text-align: center; width: 100%; font-size: 20px; height: 50px; line-height: 50px; background-color: #61bc34; color: #fff; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; }
+.btn-green { display: block; text-align: center; width: 100%; font-size: 20px; height: 50px; line-height: 50px; letter-spacing: -0.4px; background-color: #61bc34; color: #fff; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 .btn-green:hover { background-color: #7fd945; }
 
 .btn-blue { width: 140px; height: 40px; line-height: 40px; text-align: center; color: #FFF; background-color: #3495df; font-size: 15px; border-radius: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
@@ -437,7 +437,6 @@ i-mb-25 { margin-bottom: 25px; }
 .update-tool { padding: 19px 23px 30px 23px; margin-bottom: 31px; width: 300px; border: 1px solid #dbdbdb; }
 .update-tool__subscr { color: #90959a; margin-bottom: 16px; }
 .update-tool__descr { margin-top: 14px; }
-.update-tool__btn { font-size: 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
 .update-tool__btn:hover { text-decoration: none; }
 .update-tool__left { margin-right: 10px; }
 .update-tool .list { margin: 13px 0 20px; }

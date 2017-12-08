@@ -143,7 +143,7 @@ i-mb-25 { margin-bottom: 25px; }
 .btn.is-large { width: 440px; font-size: 24px; }
 
 .btn-green { display: block; text-align: center; width: 100%; font-size: 20px; height: 50px; line-height: 50px; background-color: #61bc34; color: #fff; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; }
-.btn-green:hover { background-color: #64d22e; }
+.btn-green:hover { background-color: #7fd945; }
 
 .btn-blue { width: 140px; height: 40px; line-height: 40px; text-align: center; color: #FFF; background-color: #3495df; font-size: 15px; border-radius: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 .btn-blue:hover { background-color: #44a7f1; }

@@ -76,6 +76,8 @@ h3 { font-size: 16px; font-family: "Open Sans", Helvetica, Arial, sans-serif; fo
 h3.is-fz-18 { font-size: 18px; }
 h3.is-fz-20 { font-size: 20px; color: #1b88da; }
 
+h4 { font-size: 18px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
+
 a { color: #4d5257; display: inline-block; text-decoration: none; cursor: pointer; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 a:hover { text-decoration: underline; }
 a:active, a:focus, a:visited { text-decoration: none; }
@@ -219,7 +221,7 @@ i-mb-25 { margin-bottom: 25px; }
 
 .method { margin-top: 33px; }
 .method__title { margin-bottom: 17px; padding-bottom: 10px; border-bottom: 1px solid #1b88da; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
-.method__name { display: block; margin-bottom: 15px; font-size: 18px; }
+.method__name { display: block; margin-bottom: 18px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
 .method__descr { margin-bottom: 26px; }
 .method__list { margin-bottom: 35px; }
 .method__el { margin-bottom: 10px; }

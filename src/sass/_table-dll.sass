@@ -1,8 +1,42 @@
 .table-dll
   margin-bottom: 25px
+  table-layout: fixed
+  white-space: nowrap
+
+  .test
+    display: inline-block
+    width: 100%
+    overflow: hidden
+
+  .test-inner
+    text-overflow: ellipsis
 
   thead
     background-color: #f6f7fa
+
+    th
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+
+      &:first-child
+        width: 22%
+
+      &:nth-child(2)
+        width: 10%
+
+      &:nth-child(3)
+        width: 12%
+
+      &:nth-child(4)
+        width: 30%
+
+      &:nth-child(5)
+        width: 12%
+
+      &:last-child
+        width: 14%
+        text-align: center
 
   th
     height: 36px
@@ -24,25 +58,28 @@
     position: relative
     padding-left: 10px
     text-align: left
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
-    &:first-child
-      width: 22%
-
-    &:nth-child(2)
-      width: 12%
-
-    &:nth-child(3)
-      width: 14%
-
-    &:nth-child(4)
-      width: 32%
-
-    &:nth-child(5)
-      width: 5%
-
-    &:last-child
-      width: 15%
-      text-align: center
+    //&:first-child
+    //  width: 24%
+    //
+    //&:nth-child(2)
+    //  width: 10%
+    //
+    //&:nth-child(3)
+    //  width: 12%
+    //
+    //&:nth-child(4)
+    //  width: 34%
+    //
+    //&:nth-child(5)
+    //  width: 5%
+    //
+    //&:last-child
+    //  width: 15%
+    //  text-align: center
 
   &__bit
     padding: 1px 4px

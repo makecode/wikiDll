@@ -237,5 +237,15 @@ $(document).ready(function() {
 
     $('body,html').animate({scrollTop: top - margin}, 1000);
   });
+
+  $('#header-search-input').focus(function () {
+    $(this).keypress(function (e) {
+      if (e.which === 13) {
+        $('#header-search-form').submit();
+      }
+    });
+  });
+
+
 });
 

@@ -239,9 +239,15 @@ $(document).ready(function() {
   });
 
   $('#header-search-input').focus(function () {
-    $(this).keypress(function (e) {
-      if (e.which === 13) {
-        $('#header-search-form').submit();
+    $(this).keypress(function (event) {
+      const value = event.target.value;
+
+      if (event.which === 13) {
+        if (value) {
+          $('#header-search-form').submit();
+        }
+
+        return false;
       }
     });
   });

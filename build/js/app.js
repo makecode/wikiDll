@@ -252,6 +252,5 @@ $(document).ready(function() {
     });
   });
 
-
 });
 
